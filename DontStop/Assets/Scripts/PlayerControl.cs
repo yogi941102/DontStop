@@ -14,7 +14,7 @@ public class PlayerControl : MonoBehaviour {
     public float duckTimer= 1.0f;
     public bool isDuck =false;
     public Vector3 speed, StartPosition;
-    public bool canDragMap = true;
+    public bool canDragMap = false;
     public float dragSpeed = 0.05f;
     void Start () {
         rg = GetComponent<Rigidbody2D>();  //获取玩家rigibody
