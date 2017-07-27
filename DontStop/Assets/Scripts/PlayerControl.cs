@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class PlayerControl : MonoBehaviour {
-    public float V0 = 0.05f; //初速度
+    public float V0 = 0.08f; //初速度
     public Rigidbody2D rg; //玩家的rigibody
     public float jumpPower; //跳跃力量
     public bool onGround = false; //是否在地上
@@ -21,7 +21,7 @@ public class PlayerControl : MonoBehaviour {
         this.transform.position += new Vector3(V0, 0, 0);
         if (onGround)
         {
-            if (Input.GetKeyDown(KeyCode.W))
+            if (Input.GetKeyDown(KeyCode.W) && isDuck == false)
             {
                 rg.AddForce(transform.up * jumpPower);
             }
@@ -31,16 +31,17 @@ public class PlayerControl : MonoBehaviour {
                 characterCollider.offset = new Vector2(0, -characterSizeY * duckRate / 2);
                 isDuck = true;
             }
-            if (isDuck)
+            
+        }
+        if (isDuck)
+        {
+            duckTimer -= Time.deltaTime;
+            if (duckTimer < 0)
             {
-                duckTimer -= Time.deltaTime;
-                if (duckTimer < 0)
-                {
-                    characterCollider.size = new Vector2(characterSizeX, characterSizeY);
-                    characterCollider.offset = new Vector2(0, 0);
-                    duckTimer = 1.0f;
-                    isDuck = false;
-                }
+                characterCollider.size = new Vector2(characterSizeX, characterSizeY);
+                characterCollider.offset = new Vector2(0, 0);
+                duckTimer = 1.0f;
+                isDuck = false;
             }
         }
         Camera.main.transform.position += new Vector3(V0, 0, 0);
