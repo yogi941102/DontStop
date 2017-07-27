@@ -13,19 +13,25 @@ public class PlayerControl : MonoBehaviour {
     public float duckRate = 0.5f;  //下蹲改变的碰撞体大小比例
     public float duckTimer= 1.0f;
     public bool isDuck =false;
-    public Vector3 speed, StartPosition; 
+    public Vector3 speed, StartPosition;
+    public bool canDragMap = true;
+    public float dragSpeed = 0.05f;
     void Start () {
         rg = GetComponent<Rigidbody2D>();  //获取玩家rigibody
     }
     void Update () {
         this.transform.position += new Vector3(V0, 0, 0);
+        if (canDragMap)
+        {
+            LeftRightControl();
+        }
         if (onGround)
         {
-            if (Input.GetKeyDown(KeyCode.W) && isDuck == false)
+            if (Input.GetKeyDown(KeyCode.UpArrow) && isDuck == false)
             {
                 rg.AddForce(transform.up * jumpPower);
             }
-            if (Input.GetKeyDown(KeyCode.S))
+            if (Input.GetKeyDown(KeyCode.DownArrow))
             {
                 characterCollider.size = new Vector2 (characterSizeX, characterSizeY * duckRate);
                 characterCollider.offset = new Vector2(0, -characterSizeY * duckRate / 2);
@@ -45,5 +51,31 @@ public class PlayerControl : MonoBehaviour {
             }
         }
         Camera.main.transform.position += new Vector3(V0, 0, 0);
+        
+    }
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.gameObject.tag == "CanDrag")
+        {
+            canDragMap = true;
+        }
+        if (collision.gameObject.tag == "CanNotDrag")
+        {
+            canDragMap = false;
+        }
+    }
+
+    void LeftRightControl()
+    {
+        if (Input.GetKey(KeyCode.LeftArrow))
+        {
+            this.transform.position += new Vector3(dragSpeed, 0, 0);
+            Camera.main.transform.position += new Vector3(dragSpeed, 0, 0);
+        }
+        if (Input.GetKey(KeyCode.RightArrow))
+        {
+            this.transform.position += new Vector3(-dragSpeed, 0, 0);
+            Camera.main.transform.position += new Vector3(-dragSpeed, 0, 0);
+        }
     }
 }

@@ -8,9 +8,9 @@ public class Cameras : MonoBehaviour
     public GameObject player;
     public GameObject Eyes;
     public float cameraOffset = 3.0f;
-    Vector2 cameraPos;
-    Vector2 playerPos;
-    private float V0;
+    //Vector2 cameraPos;
+    //Vector2 playerPos;
+    //private float V0;
     public PlayerControl pc;
     // Use this for initialization
     void Start()
@@ -21,10 +21,10 @@ public class Cameras : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        cameraPos = Eyes.transform.position;
-        playerPos = player.transform.position;
+    //    cameraPos = Eyes.transform.position;
+    //    playerPos = player.transform.position;
         //this.transform.position = player.transform.position + def;
-        V0 = player.gameObject.GetComponent<PlayerControl>().V0;
+        //V0 = player.gameObject.GetComponent<PlayerControl>().V0;
         
         Eyes.transform.position += pc.speed;
         //if (playerPos.x>cameraPos.x - cameraOffset)
