@@ -27,11 +27,11 @@ public class PlayerControl : MonoBehaviour {
         }
         if (onGround)
         {
-            if (Input.GetKeyDown(KeyCode.UpArrow) && isDuck == false)
+            if (Input.GetKeyDown(KeyCode.W) && isDuck == false)
             {
                 rg.AddForce(transform.up * jumpPower);
             }
-            if (Input.GetKeyDown(KeyCode.DownArrow))
+            if (Input.GetKeyDown(KeyCode.S))
             {
                 characterCollider.size = new Vector2 (characterSizeX, characterSizeY * duckRate);
                 characterCollider.offset = new Vector2(0, -characterSizeY * duckRate / 2);
