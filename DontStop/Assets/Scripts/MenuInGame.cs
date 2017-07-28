@@ -9,6 +9,7 @@ public class MenuInGame : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
         player = GameObject.FindGameObjectWithTag("Player");
+        //Time.timeScale = 2;
 	}
 	
 	// Update is called once per frame
