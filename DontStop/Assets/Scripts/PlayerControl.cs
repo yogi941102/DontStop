@@ -18,6 +18,7 @@ public class PlayerControl : MonoBehaviour {
     public float dragSpeed = 0.05f;
     void Start () {
         rg = GetComponent<Rigidbody2D>();  //获取玩家rigibody
+        
     }
     void Update () {
         this.transform.position += new Vector3(V0, 0, 0);

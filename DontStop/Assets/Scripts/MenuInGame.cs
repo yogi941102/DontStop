@@ -6,13 +6,17 @@ public class MenuInGame : MonoBehaviour {
     public GameObject menu;
     public bool showMenu = false;
     public GameObject player;
+    
 	// Use this for initialization
 	void Start () {
         player = GameObject.FindGameObjectWithTag("Player");
-	}
-	
-	// Update is called once per frame
-	void Update () {
+        player.gameObject.GetComponent<PlayerControl>().enabled = true;
+        Time.timeScale = 1;
+
+    }
+
+    // Update is called once per frame
+    void Update () {
 		if (Input.GetKeyDown(KeyCode.Escape))
         {
             Time.timeScale = 0;
