@@ -8,18 +8,18 @@ public class PlayerControl : MonoBehaviour {
     public float jumpPower; //跳跃力量
     public bool onGround = false; //是否在地上
     public BoxCollider2D characterCollider; //玩家的碰撞体
-    private float characterSizeX = 10.24f; //玩家碰撞体的X大小
-    private float characterSizeY = 7.68f;  //玩家碰撞体的Y大小
+    private float characterSizeX = 0.44f; //玩家碰撞体的X大小
+    private float characterSizeY = 0.53f;  //玩家碰撞体的Y大小
     public float duckRate = 0.5f;  //下蹲改变的碰撞体大小比例
     public float duckTimer= 1.0f;
     public bool isDuck =false;
     public Vector3 speed, StartPosition;
     public bool canDragMap = false;
     public float dragSpeed = 0.05f;
-    //private float duckAgainTimer = 0.1f;
+    //private Animator animator;
     void Start () {
         rg = GetComponent<Rigidbody2D>();  //获取玩家rigibody
-    }
+}
     void Update () {
         this.transform.position += new Vector3(V0, 0, 0);
         if (canDragMap)
@@ -37,6 +37,7 @@ public class PlayerControl : MonoBehaviour {
                 characterCollider.size = new Vector2 (characterSizeX, characterSizeY * duckRate);
                 characterCollider.offset = new Vector2(0, -characterSizeY * duckRate / 2);
                 isDuck = true;
+                transform.GetComponent<ManAnim>().OnAni();
             }
             
         }
@@ -49,7 +50,6 @@ public class PlayerControl : MonoBehaviour {
                 characterCollider.size = new Vector2(characterSizeX, characterSizeY);
                 characterCollider.offset = new Vector2(0, 0);
                 duckTimer = 1.0f;
-                //duckAgainTimer = 0.1f;
                 isDuck = false;
             }
         }
