@@ -19,6 +19,7 @@ public class PlayerControl : MonoBehaviour {
     //private Animator animator;
     void Start () {
         rg = GetComponent<Rigidbody2D>();  //获取玩家rigibody
+        onGround = true;
 }
     void Update () {
         this.transform.position += new Vector3(V0, 0, 0);
@@ -39,7 +40,6 @@ public class PlayerControl : MonoBehaviour {
                 isDuck = true;
                 transform.GetComponent<ManAnim>().OnAni();
             }
-            
         }
         if (isDuck)
         {
@@ -50,6 +50,7 @@ public class PlayerControl : MonoBehaviour {
                 characterCollider.size = new Vector2(characterSizeX, characterSizeY);
                 characterCollider.offset = new Vector2(0, 0);
                 duckTimer = 1.0f;
+                Debug.Log("1");
                 isDuck = false;
             }
         }
