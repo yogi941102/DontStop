@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class PlayerControl : MonoBehaviour {
-    public float V0 = 0.16f; //初速度
+    public float V0 = 0.12f; //初速度
     public Rigidbody2D rg; //玩家的rigibody
     public float jumpPower; //跳跃力量
     public bool onGround = false; //是否在地上
@@ -16,7 +16,7 @@ public class PlayerControl : MonoBehaviour {
     public Vector3 speed, StartPosition;
     public bool canDragMap = false;
     public float dragSpeed = 0.05f;
-    private float duckAgainTimer = 0.1f;
+    //private float duckAgainTimer = 0.1f;
     void Start () {
         rg = GetComponent<Rigidbody2D>();  //获取玩家rigibody
     }
@@ -49,7 +49,7 @@ public class PlayerControl : MonoBehaviour {
                 characterCollider.size = new Vector2(characterSizeX, characterSizeY);
                 characterCollider.offset = new Vector2(0, 0);
                 duckTimer = 1.0f;
-                duckAgainTimer = 0.1f;
+                //duckAgainTimer = 0.1f;
                 isDuck = false;
             }
         }
