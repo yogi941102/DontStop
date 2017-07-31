@@ -4,11 +4,12 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 
 public class ButtonClick : MonoBehaviour {
-    public GameObject sceneManager;
+    public GameObject mainCamera;
+    AudioSource[] audioSource;
 	// Use this for initialization
 	void Start () {
-        sceneManager = GameObject.FindGameObjectWithTag("SceneManager");
-
+        mainCamera = GameObject.FindGameObjectWithTag("MainCamera");
+        audioSource = mainCamera.GetComponents<AudioSource>();
 	}
 	
 	// Update is called once per frame
@@ -17,12 +18,12 @@ public class ButtonClick : MonoBehaviour {
 	}
     public void OnScene(string i)
     {
-        sceneManager.GetComponent<AudioSource>().Play();
+        audioSource[1].Play();
         SceneManager.LoadScene(i);
     }
     public void ExitGame()
     {
         Application.Quit();
-        sceneManager.GetComponent<AudioSource>().Play();
+        audioSource[1].Play();
     }
 }

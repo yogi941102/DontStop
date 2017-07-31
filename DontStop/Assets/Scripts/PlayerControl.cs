@@ -17,11 +17,15 @@ public class PlayerControl : MonoBehaviour {
     //public Vector3 speed, StartPosition;
     public bool canDragMap = false;
     public float dragSpeed = 0.07f;
+    public GameObject mainCamera;
+    AudioSource[] audioSource;
     //private Animator animator;
     void Start () {
         duckTimer = setDuckTime;
         rg = GetComponent<Rigidbody2D>();  //获取玩家rigibody
         onGround = true;
+        mainCamera = GameObject.FindGameObjectWithTag("MainCamera");
+        audioSource = mainCamera.GetComponents<AudioSource>();
 }
     void Update () {
         this.transform.position += new Vector3(V0, 0, 0);
@@ -35,6 +39,7 @@ public class PlayerControl : MonoBehaviour {
             {
                 rg.AddForce(transform.up * jumpPower);
                 transform.GetComponent<ManAnim>().OnAniJump();
+                audioSource[2].Play();
             }
             if (Input.GetKeyDown(KeyCode.S))
             {
@@ -42,6 +47,7 @@ public class PlayerControl : MonoBehaviour {
                 characterCollider.offset = new Vector2(0, -characterSizeY * duckRate / 2);
                 isDuck = true;
                 transform.GetComponent<ManAnim>().OnAniDuck();
+                audioSource[3].Play();
             }
         }
         if (isDuck)
