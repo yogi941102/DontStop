@@ -79,10 +79,27 @@ public class PlayerControl : MonoBehaviour {
 
     void LeftRightControl()
     {
+        if (Input.GetKeyDown(KeyCode.LeftArrow))
+        {
+            audioSource[5].Play();
+        }
+        if (Input.GetKeyUp(KeyCode.LeftArrow))
+        {
+            audioSource[5].Pause();
+        }
+        if (Input.GetKeyDown(KeyCode.RightArrow))
+        {
+            audioSource[6].Play();
+        }
+        if (Input.GetKeyUp(KeyCode.RightArrow))
+        {
+            audioSource[6].Pause();
+        }
         if (Input.GetKey(KeyCode.LeftArrow))
         {
             this.transform.position += new Vector3(dragSpeed, 0, 0);
             Camera.main.transform.position += new Vector3(dragSpeed, 0, 0);
+            
         }
         if (Input.GetKey(KeyCode.RightArrow))
         {
