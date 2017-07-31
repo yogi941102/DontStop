@@ -25,6 +25,7 @@ public class Death : MonoBehaviour {
         if (collision.gameObject.tag == "Trap")
         {
             audioSource[4].Play();
+            audioSource[0].Pause();
             Instantiate(explosionPrefeb, this.gameObject.transform.position, Quaternion.identity);
             this.gameObject.transform.position = new Vector2(0, 1000000);
             Destroy(this.gameObject, 3);
