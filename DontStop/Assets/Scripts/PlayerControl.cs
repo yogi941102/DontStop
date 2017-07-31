@@ -12,11 +12,11 @@ public class PlayerControl : MonoBehaviour {
     private float characterSizeY = 0.53f;  //玩家碰撞体的Y大小
     public float duckRate = 0.5f;  //下蹲改变的碰撞体大小比例
     float duckTimer;
-    public float setDuckTime;
+    public float setDuckTime = 0.6f;
     public bool isDuck =false;
     //public Vector3 speed, StartPosition;
     public bool canDragMap = false;
-    public float dragSpeed = 0.05f;
+    public float dragSpeed = 0.07f;
     //private Animator animator;
     void Start () {
         duckTimer = setDuckTime;
