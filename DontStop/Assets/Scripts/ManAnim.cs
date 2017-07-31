@@ -14,8 +14,12 @@ public class ManAnim : MonoBehaviour {
 		
 	}
 
-    public void OnAni()
+    public void OnAniDuck()
     {
         anim.SetTrigger("duck");
+    }
+    public void OnAniJump()
+    {
+        anim.SetTrigger("jump");
     }
 }

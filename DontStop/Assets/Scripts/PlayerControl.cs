@@ -13,7 +13,7 @@ public class PlayerControl : MonoBehaviour {
     public float duckRate = 0.5f;  //下蹲改变的碰撞体大小比例
     public float duckTimer= 1.0f;
     public bool isDuck =false;
-    public Vector3 speed, StartPosition;
+    //public Vector3 speed, StartPosition;
     public bool canDragMap = false;
     public float dragSpeed = 0.05f;
     //private Animator animator;
@@ -32,13 +32,14 @@ public class PlayerControl : MonoBehaviour {
             if (Input.GetKeyDown(KeyCode.W) && isDuck == false)
             {
                 rg.AddForce(transform.up * jumpPower);
+                transform.GetComponent<ManAnim>().OnAniJump();
             }
             if (Input.GetKeyDown(KeyCode.S))
             {
                 characterCollider.size = new Vector2 (characterSizeX, characterSizeY * duckRate);
                 characterCollider.offset = new Vector2(0, -characterSizeY * duckRate / 2);
                 isDuck = true;
-                transform.GetComponent<ManAnim>().OnAni();
+                transform.GetComponent<ManAnim>().OnAniDuck();
             }
         }
         if (isDuck)

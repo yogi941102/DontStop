@@ -26,7 +26,7 @@ public class Camerarelated : MonoBehaviour
         //this.transform.position = player.transform.position + def;
         //V0 = player.gameObject.GetComponent<PlayerControl>().V0;
         
-        Eyes.transform.position += pc.speed;
+        //Eyes.transform.position += pc.speed;
         //if (playerPos.x>cameraPos.x - cameraOffset)
         //{
         //    V0 = player.gameObject.GetComponent<PlayerControl>().V0;
