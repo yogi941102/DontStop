@@ -5,9 +5,11 @@ using UnityEngine.SceneManagement;
 
 public class Death : MonoBehaviour {
     public GameObject explosionPrefeb;
+    public GameObject dieCanvas;
+    GameObject player;
 	// Use this for initialization
 	void Start () {
-		
+        player = GameObject.FindGameObjectWithTag("Player");
 	}
 	
 	// Update is called once per frame
@@ -21,11 +23,16 @@ public class Death : MonoBehaviour {
             Instantiate(explosionPrefeb, this.gameObject.transform.position, Quaternion.identity);
             this.gameObject.transform.position = new Vector2(0, 1000000);
             Destroy(this.gameObject, 3);
-            Invoke("GameOver", 2.0f);
+            Invoke("GameOver", 1.5f);
+            PauseGame();
         }
     }
     void GameOver()
     {
-        SceneManager.LoadScene("GameOver");
+        dieCanvas.SetActive(true);
+    }
+    void PauseGame()
+    {
+        player.GetComponent<PlayerControl>().enabled = false;
     }
 }

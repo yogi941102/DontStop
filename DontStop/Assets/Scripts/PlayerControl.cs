@@ -53,7 +53,6 @@ public class PlayerControl : MonoBehaviour {
                 characterCollider.size = new Vector2(characterSizeX, characterSizeY);
                 characterCollider.offset = new Vector2(0, 0);
                 duckTimer = setDuckTime;
-                Debug.Log("1");
                 isDuck = false;
             }
         }
