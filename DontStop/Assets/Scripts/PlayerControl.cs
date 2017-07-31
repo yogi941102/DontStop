@@ -11,13 +11,15 @@ public class PlayerControl : MonoBehaviour {
     private float characterSizeX = 0.44f; //玩家碰撞体的X大小
     private float characterSizeY = 0.53f;  //玩家碰撞体的Y大小
     public float duckRate = 0.5f;  //下蹲改变的碰撞体大小比例
-    public float duckTimer= 1.0f;
+    float duckTimer;
+    public float setDuckTime;
     public bool isDuck =false;
     //public Vector3 speed, StartPosition;
     public bool canDragMap = false;
     public float dragSpeed = 0.05f;
     //private Animator animator;
     void Start () {
+        duckTimer = setDuckTime;
         rg = GetComponent<Rigidbody2D>();  //获取玩家rigibody
         onGround = true;
 }
@@ -50,7 +52,7 @@ public class PlayerControl : MonoBehaviour {
             {
                 characterCollider.size = new Vector2(characterSizeX, characterSizeY);
                 characterCollider.offset = new Vector2(0, 0);
-                duckTimer = 1.0f;
+                duckTimer = setDuckTime;
                 Debug.Log("1");
                 isDuck = false;
             }
