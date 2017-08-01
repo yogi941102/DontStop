@@ -39,12 +39,14 @@ public class PlayerControl : MonoBehaviour {
         }
         if (onGround)
         {
+            //if (Input.GetKeyDown(KeyCode.JoystickButton6) && isDuck == false)
             if (Input.GetKeyDown(KeyCode.W) && isDuck == false)
             {
                 rg.AddForce(transform.up * jumpPower);
                 transform.GetComponent<ManAnim>().OnAniJump();
                 audioSource[2].Play();
             }
+            //if (Input.GetAxis("Down") != 0)
             if (Input.GetKeyDown(KeyCode.S))
             {
                 characterCollider.size = new Vector2 (characterSizeX, characterSizeY * duckRate);

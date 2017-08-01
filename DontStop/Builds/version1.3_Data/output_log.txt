@@ -7,51 +7,40 @@ Direct3D:
     VRAM:     3072 MB
     Driver:   10.18.13.6881
 Begin MonoManager ReloadAssembly
-Platform assembly: E:\Workspace\DontStop\DontStop\Builds\version1.3_Data\Managed\UnityEngine.dll (this message is harmless)
-Loading E:\Workspace\DontStop\DontStop\Builds\version1.3_Data\Managed\UnityEngine.dll into Unity Child Domain
-Platform assembly: E:\Workspace\DontStop\DontStop\Builds\version1.3_Data\Managed\Assembly-CSharp-firstpass.dll (this message is harmless)
-Loading E:\Workspace\DontStop\DontStop\Builds\version1.3_Data\Managed\Assembly-CSharp-firstpass.dll into Unity Child Domain
-Platform assembly: E:\Workspace\DontStop\DontStop\Builds\version1.3_Data\Managed\Assembly-CSharp.dll (this message is harmless)
-Loading E:\Workspace\DontStop\DontStop\Builds\version1.3_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
-Platform assembly: E:\Workspace\DontStop\DontStop\Builds\version1.3_Data\Managed\UnityEngine.UI.dll (this message is harmless)
-Loading E:\Workspace\DontStop\DontStop\Builds\version1.3_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
-Platform assembly: E:\Workspace\DontStop\DontStop\Builds\version1.3_Data\Managed\UnityEngine.Networking.dll (this message is harmless)
-Loading E:\Workspace\DontStop\DontStop\Builds\version1.3_Data\Managed\UnityEngine.Networking.dll into Unity Child Domain
-Platform assembly: E:\Workspace\DontStop\DontStop\Builds\version1.3_Data\Managed\UnityEngine.PlaymodeTestsRunner.dll (this message is harmless)
-Loading E:\Workspace\DontStop\DontStop\Builds\version1.3_Data\Managed\UnityEngine.PlaymodeTestsRunner.dll into Unity Child Domain
-Platform assembly: E:\Workspace\DontStop\DontStop\Builds\version1.3_Data\Managed\UnityEngine.Analytics.dll (this message is harmless)
-Loading E:\Workspace\DontStop\DontStop\Builds\version1.3_Data\Managed\UnityEngine.Analytics.dll into Unity Child Domain
-- Completed reload, in  0.023 seconds
-Platform assembly: E:\Workspace\DontStop\DontStop\Builds\version1.3_Data\Managed\System.Core.dll (this message is harmless)
-Platform assembly: E:\Workspace\DontStop\DontStop\Builds\version1.3_Data\Managed\System.dll (this message is harmless)
+Platform assembly: D:\Unity3D\DontStop\DontStop\Builds\version1.3_Data\Managed\UnityEngine.dll (this message is harmless)
+Loading D:\Unity3D\DontStop\DontStop\Builds\version1.3_Data\Managed\UnityEngine.dll into Unity Child Domain
+Platform assembly: D:\Unity3D\DontStop\DontStop\Builds\version1.3_Data\Managed\Assembly-CSharp-firstpass.dll (this message is harmless)
+Loading D:\Unity3D\DontStop\DontStop\Builds\version1.3_Data\Managed\Assembly-CSharp-firstpass.dll into Unity Child Domain
+Platform assembly: D:\Unity3D\DontStop\DontStop\Builds\version1.3_Data\Managed\Assembly-CSharp.dll (this message is harmless)
+Loading D:\Unity3D\DontStop\DontStop\Builds\version1.3_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
+Platform assembly: D:\Unity3D\DontStop\DontStop\Builds\version1.3_Data\Managed\UnityEngine.UI.dll (this message is harmless)
+Loading D:\Unity3D\DontStop\DontStop\Builds\version1.3_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
+Platform assembly: D:\Unity3D\DontStop\DontStop\Builds\version1.3_Data\Managed\UnityEngine.Networking.dll (this message is harmless)
+Loading D:\Unity3D\DontStop\DontStop\Builds\version1.3_Data\Managed\UnityEngine.Networking.dll into Unity Child Domain
+Platform assembly: D:\Unity3D\DontStop\DontStop\Builds\version1.3_Data\Managed\UnityEngine.PlaymodeTestsRunner.dll (this message is harmless)
+Loading D:\Unity3D\DontStop\DontStop\Builds\version1.3_Data\Managed\UnityEngine.PlaymodeTestsRunner.dll into Unity Child Domain
+Platform assembly: D:\Unity3D\DontStop\DontStop\Builds\version1.3_Data\Managed\UnityEngine.Analytics.dll (this message is harmless)
+Loading D:\Unity3D\DontStop\DontStop\Builds\version1.3_Data\Managed\UnityEngine.Analytics.dll into Unity Child Domain
+- Completed reload, in  0.028 seconds
+Platform assembly: D:\Unity3D\DontStop\DontStop\Builds\version1.3_Data\Managed\System.Core.dll (this message is harmless)
+Platform assembly: D:\Unity3D\DontStop\DontStop\Builds\version1.3_Data\Managed\System.dll (this message is harmless)
 desktop: 1920x1080 60Hz; virtual: 1920x1080 at 0,0
 <RI> Initializing input.
 <RI> Input initialized.
 <RI> Initialized touch support.
-UnloadTime: 0.833323 ms
+UnloadTime: 3.510925 ms
 Unloading 5 Unused Serialized files (Serialized files now loaded: 0)
-UnloadTime: 3.279503 ms
+UnloadTime: 3.016277 ms
 
-Unloading 9 unused Assets to reduce memory usage. Loaded Objects now: 654.
-Total: 0.198938 ms (FindLiveObjects: 0.019922 ms CreateObjectMapping: 0.012807 ms MarkObjects: 0.148848 ms  DeleteObjects: 0.017360 ms)
-
-Unloading 4 Unused Serialized files (Serialized files now loaded: 0)
-UnloadTime: 2.132545 ms
-
-Unloading 1 unused Assets to reduce memory usage. Loaded Objects now: 654.
-Total: 0.732288 ms (FindLiveObjects: 0.082250 ms CreateObjectMapping: 0.058059 ms MarkObjects: 0.579171 ms  DeleteObjects: 0.011668 ms)
+Unloading 10 unused Assets to reduce memory usage. Loaded Objects now: 694.
+Total: 0.415243 ms (FindLiveObjects: 0.043260 ms CreateObjectMapping: 0.019353 ms MarkObjects: 0.154542 ms  DeleteObjects: 0.197802 ms)
 
 Unloading 4 Unused Serialized files (Serialized files now loaded: 0)
-UnloadTime: 1.503852 ms
+UnloadTime: 2.275442 ms
 
-Unloading 31 unused Assets to reduce memory usage. Loaded Objects now: 570.
-Total: 0.643491 ms (FindLiveObjects: 0.069728 ms CreateObjectMapping: 0.058059 ms MarkObjects: 0.460775 ms  DeleteObjects: 0.054644 ms)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at Death.GameOver () [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
+Unloading 1 unused Assets to reduce memory usage. Loaded Objects now: 694.
+Total: 0.749657 ms (FindLiveObjects: 0.081113 ms CreateObjectMapping: 0.060621 ms MarkObjects: 0.596254 ms  DeleteObjects: 0.010815 ms)
 
 Setting up 2 worker threads for Enlighten.
-  Thread -> id: 3658 -> priority: 1 
-  Thread -> id: 1544 -> priority: 1 
+  Thread -> id: 14f2c -> priority: 1 
+  Thread -> id: f258 -> priority: 1 
