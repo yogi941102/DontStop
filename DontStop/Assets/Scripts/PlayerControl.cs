@@ -19,6 +19,10 @@ public class PlayerControl : MonoBehaviour {
     public float dragSpeed = 0.07f;
     public GameObject mainCamera;
     AudioSource[] audioSource;
+    public GameObject controllerLeft;
+    public GameObject controllerMiddle;
+    public GameObject controllerRight;
+
     //private Animator animator;
     void Start () {
         duckTimer = setDuckTime;
@@ -81,18 +85,30 @@ public class PlayerControl : MonoBehaviour {
     {
         if (Input.GetKeyDown(KeyCode.LeftArrow))
         {
+            controllerLeft.SetActive(true);
+            controllerMiddle.SetActive(false);
+            controllerRight.SetActive(false);
             audioSource[5].Play();
         }
         if (Input.GetKeyUp(KeyCode.LeftArrow))
         {
+            controllerLeft.SetActive(false);
+            controllerMiddle.SetActive(true);
+            controllerRight.SetActive(false);
             audioSource[5].Pause();
         }
         if (Input.GetKeyDown(KeyCode.RightArrow))
         {
+            controllerLeft.SetActive(false);
+            controllerMiddle.SetActive(false);
+            controllerRight.SetActive(true);
             audioSource[6].Play();
         }
         if (Input.GetKeyUp(KeyCode.RightArrow))
         {
+            controllerLeft.SetActive(false);
+            controllerMiddle.SetActive(true);
+            controllerRight.SetActive(false);
             audioSource[6].Pause();
         }
         if (Input.GetKey(KeyCode.LeftArrow))
