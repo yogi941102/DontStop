@@ -7,9 +7,13 @@ public class Death : MonoBehaviour {
     public GameObject explosionPrefeb;
     public GameObject dieCanvas;
     GameObject player;
+    GameObject mainCamera;
+    AudioSource[] audioSource;
 	// Use this for initialization
 	void Start () {
         player = GameObject.FindGameObjectWithTag("Player");
+        mainCamera = GameObject.FindGameObjectWithTag("MainCamera");
+        audioSource = mainCamera.GetComponents<AudioSource>();
 	}
 	
 	// Update is called once per frame
@@ -20,6 +24,8 @@ public class Death : MonoBehaviour {
     {
         if (collision.gameObject.tag == "Trap")
         {
+            audioSource[4].Play();
+            audioSource[0].Pause();
             Instantiate(explosionPrefeb, this.gameObject.transform.position, Quaternion.identity);
             this.gameObject.transform.position = new Vector2(0, 1000000);
             Destroy(this.gameObject, 3);
