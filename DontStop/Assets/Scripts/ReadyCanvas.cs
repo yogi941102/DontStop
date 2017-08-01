@@ -10,9 +10,10 @@ public class ReadyCanvas : MonoBehaviour {
     public GameObject redReady;
 	// Use this for initialization
 	void Start () {
-        Time.timeScale = 0;
+        
         player = GameObject.FindGameObjectWithTag("Player");
         player.GetComponent<PlayerControl>().enabled = false;
+        Time.timeScale = 0;
     }
 
     // Update is called once per frame
