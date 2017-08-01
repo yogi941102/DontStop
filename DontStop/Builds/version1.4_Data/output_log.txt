@@ -21,14 +21,14 @@ Platform assembly: D:\Unity3D\DontStop\DontStop\Builds\version1.4_Data\Managed\U
 Loading D:\Unity3D\DontStop\DontStop\Builds\version1.4_Data\Managed\UnityEngine.PlaymodeTestsRunner.dll into Unity Child Domain
 Platform assembly: D:\Unity3D\DontStop\DontStop\Builds\version1.4_Data\Managed\UnityEngine.Analytics.dll (this message is harmless)
 Loading D:\Unity3D\DontStop\DontStop\Builds\version1.4_Data\Managed\UnityEngine.Analytics.dll into Unity Child Domain
-- Completed reload, in  0.020 seconds
+- Completed reload, in  0.021 seconds
 Platform assembly: D:\Unity3D\DontStop\DontStop\Builds\version1.4_Data\Managed\System.Core.dll (this message is harmless)
 Platform assembly: D:\Unity3D\DontStop\DontStop\Builds\version1.4_Data\Managed\System.dll (this message is harmless)
 desktop: 1920x1080 60Hz; virtual: 1920x1080 at 0,0
 <RI> Initializing input.
 <RI> Input initialized.
 <RI> Initialized touch support.
-UnloadTime: 3.822571 ms
+UnloadTime: 3.820864 ms
 Setting up 2 worker threads for Enlighten.
-  Thread -> id: 8304 -> priority: 1 
-  Thread -> id: 3720 -> priority: 1 
+  Thread -> id: 3564 -> priority: 1 
+  Thread -> id: 3c60 -> priority: 1 
