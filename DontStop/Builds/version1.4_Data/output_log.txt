@@ -21,60 +21,14 @@ Platform assembly: D:\Unity3D\DontStop\DontStop\Builds\version1.4_Data\Managed\U
 Loading D:\Unity3D\DontStop\DontStop\Builds\version1.4_Data\Managed\UnityEngine.PlaymodeTestsRunner.dll into Unity Child Domain
 Platform assembly: D:\Unity3D\DontStop\DontStop\Builds\version1.4_Data\Managed\UnityEngine.Analytics.dll (this message is harmless)
 Loading D:\Unity3D\DontStop\DontStop\Builds\version1.4_Data\Managed\UnityEngine.Analytics.dll into Unity Child Domain
-- Completed reload, in  0.023 seconds
+- Completed reload, in  0.020 seconds
 Platform assembly: D:\Unity3D\DontStop\DontStop\Builds\version1.4_Data\Managed\System.Core.dll (this message is harmless)
 Platform assembly: D:\Unity3D\DontStop\DontStop\Builds\version1.4_Data\Managed\System.dll (this message is harmless)
 desktop: 1920x1080 60Hz; virtual: 1920x1080 at 0,0
 <RI> Initializing input.
 <RI> Input initialized.
 <RI> Initialized touch support.
-UnloadTime: 0.970798 ms
-Unloading 5 Unused Serialized files (Serialized files now loaded: 0)
-UnloadTime: 3.134389 ms
-
-Unloading 10 unused Assets to reduce memory usage. Loaded Objects now: 749.
-Total: 0.514286 ms (FindLiveObjects: 0.028176 ms CreateObjectMapping: 0.028460 ms MarkObjects: 0.210325 ms  DeleteObjects: 0.247324 ms)
-
-1
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-2
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-Unloading 5 Unused Serialized files (Serialized files now loaded: 0)
-UnloadTime: 0.773564 ms
-
-Unloading 16 unused Assets to reduce memory usage. Loaded Objects now: 772.
-Total: 0.635529 ms (FindLiveObjects: 0.031876 ms CreateObjectMapping: 0.031022 ms MarkObjects: 0.246755 ms  DeleteObjects: 0.325591 ms)
-
-Unloading 5 Unused Serialized files (Serialized files now loaded: 0)
-UnloadTime: 1.201046 ms
-
-Unloading 1 unused Assets to reduce memory usage. Loaded Objects now: 772.
-Total: 0.537055 ms (FindLiveObjects: 0.060621 ms CreateObjectMapping: 0.051514 ms MarkObjects: 0.416950 ms  DeleteObjects: 0.007399 ms)
-
-Scene 'Level3' couldn't be loaded because it has not been added to the build settings or the AssetBundle has not been loaded.
-To add a scene to the build settings use the menu File->Build Settings...
- 
-(Filename:  Line: 127)
-
-Scene 'Level3' couldn't be loaded because it has not been added to the build settings or the AssetBundle has not been loaded.
-To add a scene to the build settings use the menu File->Build Settings...
- 
-(Filename:  Line: 127)
-
-Scene 'Level3' couldn't be loaded because it has not been added to the build settings or the AssetBundle has not been loaded.
-To add a scene to the build settings use the menu File->Build Settings...
- 
-(Filename:  Line: 127)
-
-Scene 'Level3' couldn't be loaded because it has not been added to the build settings or the AssetBundle has not been loaded.
-To add a scene to the build settings use the menu File->Build Settings...
- 
-(Filename:  Line: 127)
-
+UnloadTime: 3.822571 ms
 Setting up 2 worker threads for Enlighten.
-  Thread -> id: 1a880 -> priority: 1 
-  Thread -> id: af48 -> priority: 1 
+  Thread -> id: 8304 -> priority: 1 
+  Thread -> id: 3720 -> priority: 1 
