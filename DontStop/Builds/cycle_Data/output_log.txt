@@ -1,0 +1,46 @@
+Initialize engine version: 5.5.2f1 (3829d7f588f3)
+GfxDevice: creating device client; threaded=1
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.0]
+    Renderer: NVIDIA GeForce GTX 1060 6GB (ID=0x1c03)
+    Vendor:   NVIDIA
+    VRAM:     3072 MB
+    Driver:   10.18.13.6881
+Begin MonoManager ReloadAssembly
+Platform assembly: D:\Unity3D\DontStop\DontStop\Builds\cycle_Data\Managed\UnityEngine.dll (this message is harmless)
+Loading D:\Unity3D\DontStop\DontStop\Builds\cycle_Data\Managed\UnityEngine.dll into Unity Child Domain
+Platform assembly: D:\Unity3D\DontStop\DontStop\Builds\cycle_Data\Managed\Assembly-CSharp-firstpass.dll (this message is harmless)
+Loading D:\Unity3D\DontStop\DontStop\Builds\cycle_Data\Managed\Assembly-CSharp-firstpass.dll into Unity Child Domain
+Platform assembly: D:\Unity3D\DontStop\DontStop\Builds\cycle_Data\Managed\Assembly-CSharp.dll (this message is harmless)
+Loading D:\Unity3D\DontStop\DontStop\Builds\cycle_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
+Platform assembly: D:\Unity3D\DontStop\DontStop\Builds\cycle_Data\Managed\UnityEngine.UI.dll (this message is harmless)
+Loading D:\Unity3D\DontStop\DontStop\Builds\cycle_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
+Platform assembly: D:\Unity3D\DontStop\DontStop\Builds\cycle_Data\Managed\UnityEngine.Networking.dll (this message is harmless)
+Loading D:\Unity3D\DontStop\DontStop\Builds\cycle_Data\Managed\UnityEngine.Networking.dll into Unity Child Domain
+Platform assembly: D:\Unity3D\DontStop\DontStop\Builds\cycle_Data\Managed\UnityEngine.PlaymodeTestsRunner.dll (this message is harmless)
+Loading D:\Unity3D\DontStop\DontStop\Builds\cycle_Data\Managed\UnityEngine.PlaymodeTestsRunner.dll into Unity Child Domain
+Platform assembly: D:\Unity3D\DontStop\DontStop\Builds\cycle_Data\Managed\UnityEngine.Analytics.dll (this message is harmless)
+Loading D:\Unity3D\DontStop\DontStop\Builds\cycle_Data\Managed\UnityEngine.Analytics.dll into Unity Child Domain
+- Completed reload, in  0.023 seconds
+Platform assembly: D:\Unity3D\DontStop\DontStop\Builds\cycle_Data\Managed\System.Core.dll (this message is harmless)
+Platform assembly: D:\Unity3D\DontStop\DontStop\Builds\cycle_Data\Managed\System.dll (this message is harmless)
+desktop: 1920x1080 60Hz; virtual: 1920x1080 at 0,0
+<RI> Initializing input.
+<RI> Input initialized.
+<RI> Initialized touch support.
+UnloadTime: 3.913077 ms
+Unloading 5 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 3.345568 ms
+
+Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 302.
+Total: 0.181579 ms (FindLiveObjects: 0.015653 ms CreateObjectMapping: 0.010815 ms MarkObjects: 0.135188 ms  DeleteObjects: 0.019922 ms)
+
+Unloading 3 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.247893 ms
+
+Unloading 27 unused Assets to reduce memory usage. Loaded Objects now: 262.
+Total: 0.248462 ms (FindLiveObjects: 0.011668 ms CreateObjectMapping: 0.020491 ms MarkObjects: 0.130065 ms  DeleteObjects: 0.085951 ms)
+
+Setting up 2 worker threads for Enlighten.
+  Thread -> id: 3020 -> priority: 1 
+  Thread -> id: 3a08 -> priority: 1 
