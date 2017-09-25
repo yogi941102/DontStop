@@ -7,12 +7,18 @@ public class Tutorial : MonoBehaviour {
     public GameObject player;
     public GameObject blue;
     public GameObject red;
+	public Data data;
     int i = 1;
     // Use this for initialization
     void Start () {
         player = GameObject.FindGameObjectWithTag("Player");
         player.GetComponent<PlayerControl>().enabled = false;
         Time.timeScale = 0;
+		if (data.tutorial > 0) 
+		{
+			readyCanvas.SetActive (true);
+			Destroy(this.gameObject);
+		}
     }
 	
 	// Update is called once per frame
@@ -21,15 +27,14 @@ public class Tutorial : MonoBehaviour {
         {
             blue.SetActive(false);
             red.SetActive(true);
-            Debug.Log(i);
             i++;
         }
         if (Input.GetKeyDown(KeyCode.RightArrow) && i == 2)
         {
-            Debug.Log(i);
             //blue.SetActive(false);
             //red.SetActive(false);
             readyCanvas.SetActive(true);
+			data.tutorial++;
             Destroy(this.gameObject);
         }
     }
