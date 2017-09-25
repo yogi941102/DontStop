@@ -10,8 +10,14 @@ public class MenuInGame : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
         player = GameObject.FindGameObjectWithTag("Player");
+<<<<<<< HEAD
         //player.GetComponent<PlayerControl>().enabled = true;
         //Time.timeScale = 1;
+=======
+        player.gameObject.GetComponent<PlayerControl>().enabled = true;
+        Time.timeScale = 1;
+
+>>>>>>> master
     }
 
     // Update is called once per frame

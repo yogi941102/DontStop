@@ -27,10 +27,15 @@ public class PlayerControl : MonoBehaviour {
     void Start () {
         duckTimer = setDuckTime;
         rg = GetComponent<Rigidbody2D>();  //获取玩家rigibody
+<<<<<<< HEAD
         onGround = true;
         mainCamera = GameObject.FindGameObjectWithTag("MainCamera");
         audioSource = mainCamera.GetComponents<AudioSource>();
 }
+=======
+        
+    }
+>>>>>>> master
     void Update () {
         this.transform.position += new Vector3(V0, 0, 0);
         if (canDragMap)
